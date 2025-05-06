@@ -25,7 +25,7 @@ Descrição breve do que o projeto faz, qual tecnologia foi usada e o propósito
 
 ## 📈 Estatísticas do GitHub
 
-![Kaique's GitHub stats](https://github-readme-stats.vercel.app/api?username=kakaujo&show_icons=true&theme=radical)
+![Kaique's GitHub stats](https://github-readme-stats.vercel.app/api?username=kaique-araujo&show_icons=true&theme=radical)
 
 ---
 
@@ -33,7 +33,7 @@ Descrição breve do que o projeto faz, qual tecnologia foi usada e o propósito
 
 - 📧 E-mail: [kakazin05@gmail.com](mailto:kakazin05@gmail.com)  
 - 📞 Telefone/WhatsApp: [+55 (11) 96058-4763](https://wa.me/5511960584763)
-- 💼 [LinkedIn](https://www.linkedin.com/in/seu-perfil) *(adicione aqui seu LinkedIn)*
+- 💼 [LinkedIn](https://www.linkedin.com/in/seu-perfil)
 
 ---
 
