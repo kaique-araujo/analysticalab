@@ -9,8 +9,10 @@
 ## 🚀 Projetos em Destaque
 
 🛠️ **EM DESENVOLVIMENTO**  
-Sistema de Registro Pessoal Digital
+**Sistema de Registro Pessoal Digital**
+
 Este é um aplicativo de cadastro simples, desenvolvido com Visual Code. Ele permite cadastrar um usuario e gerar um doc com todas informações coletadas. Projeto criado para pequenas e grandes empresas que necessitam gerenciar o acesso do cliente e/ou funcionario para diversos fins, garantindo uma segurança maior.
+
 ---
 
 ## 💡 Tecnologias e Ferramentas
