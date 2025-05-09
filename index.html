@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Laboratório</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logotype-semfundo.png" alt="Microscópio" class="microscope-img">
+        </header>
+
+        <form action="#" method="POST" class="form-cadastro">
+            <div class="form-group">
+                <label for="nome">Nome e Sobrenome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" maxlength="11" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg" placeholder="Digite seu RG" maxlength="9" required>
+            </div>
+
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="login">Criar Login:</label>
+                <input type="text" id="login" name="login" placeholder="Escolha seu login" required>
+            </div>
+
+            <div class="form-group" style="position: relative;">
+                <label for="senha">Criar Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required style="padding-right: 40px;">
+                <i id="toggleSenha" class="fa-solid fa-eye-slash" onclick="toggleSenha()" style="position: absolute; top: 38px; right: 10px; cursor: pointer;"></i>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn-login" onclick="window.location.href='pagina-de-login.html'">Login</button>
+                <button type="button" onclick="gerarPDF()">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        async function gerarPDF() {
+            const { jsPDF } = window.jspdf;
+
+            const nome = document.getElementById('nome').value;
+            const cpf = document.getElementById('cpf').value;
+            const rg = document.getElementById('rg').value;
+            const nascimento = document.getElementById('data-nascimento').value;
+            const login = document.getElementById('login').value;
+            const senha = document.getElementById('senha').value;
+
+            const doc = new jsPDF();
+
+            doc.setFontSize(16);
+            doc.text("Cadastro de Usuário", 20, 20);
+
+            doc.setFontSize(12);
+            doc.text(`Nome: ${nome}`, 20, 40);
+            doc.text(`CPF: ${cpf}`, 20, 50);
+            doc.text(`RG: ${rg}`, 20, 60);
+            doc.text(`Data de Nascimento: ${nascimento}`, 20, 70);
+            doc.text(`Login: ${login}`, 20, 80);
+            doc.text(`Senha: ${senha}`, 20, 90);
+
+            alert('Cadastro salvo com sucesso!');
+            doc.save("Cadastro_Usuario.pdf");
+        }
+
+        function toggleSenha() {
+            const input = document.getElementById("senha");
+            const icon = document.getElementById("toggleSenha");
+
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            } else {
+                input.type = "password";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            }
+        }
+    </script>
+</body>
+</html>
