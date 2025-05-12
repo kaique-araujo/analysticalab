@@ -33,7 +33,7 @@ Este é um site web de cadastro simples, desenvolvido com Visual Code. Ele permi
 
 ## 📫 Contato
 
-- 📧 E-mail: [kakazin05@gmail.com](mailto:kakazin05@gmail.com)  
+- 📧 E-mail: [kaique_araujo12@live.com](mailto:kakazin05@gmail.com)  
 - 📞 Telefone/WhatsApp: [+55 (11) 96058-4763](https://wa.me/5511960584763)
 - 💼 [LinkedIn](https://www.linkedin.com/in/seu-perfil)
 
