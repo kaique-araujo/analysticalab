@@ -11,7 +11,7 @@
 **Sistema de Registro Pessoal Digital**
 🛠️[([https://kaique-araujo.github.io/analysticalab/)](https://kaique-araujo.github.io/analysticalab/)]
 
-Este é um site web de cadastro simples, desenvolvido com Visual Code. Ele permite cadastrar um usuario e gerar um pdf com todas informações coletadas. Projeto criado para pequenas e grandes empresas que necessitam gerenciar o acesso do cliente e/ou funcionario para diversos fins, garantindo uma segurança maior.
+Este é um site web de cadastro simples, desenvolvido com Visual Code. Ele permite cadastrar um usuario e gerar um pdf com todas informações coletadas. Projeto criado para pequenas e grandes empresas que necessitam gerenciar o acesso do cliente e/ou funcionario para diversos fins, garantindo uma segurança maior e um controle preciso.
 
 ---
 
